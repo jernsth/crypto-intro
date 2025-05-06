@@ -1,0 +1,1 @@
+Da XOR symmetrisch ist, kann man denselben key und die verschlüsselte Flagge wieder mit XOR verschlüsseln und bekommt die entschlüsselte Flagge heraus.

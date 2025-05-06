@@ -1,0 +1,26 @@
+In dieser Aufgabe wurde eine Nachricht mit RSA verschlüsselt. Der öffentliche Schlüssel (n, e) sowie der verschlüsselte Text ciphertext wurden bereitgestellt. Der Haken: Einer der Primfaktoren von n – nämlich p = 13 – war bekannt, was einen Angriff ermöglichte.
+
+Lösungsschritte:
+
+1)Gegeben:
+
+        Öffentlicher Schlüssel: n=p⋅qn=p⋅q
+
+        Öffentlicher Exponent ee
+
+        Ciphertext c=memod  nc=memodn
+
+        Bekannter Faktor: p=13p=13
+
+2) Angriffsidee:
+RSA basiert auf der Annahme, dass das Faktorisieren von nn schwer ist. Wenn aber ein Faktor (hier pp) bekannt ist, kann der andere (qq) leicht berechnet werden:
+
+q=n//p
+
+3)  RSA-Parameter rekonstruieren
+phi(n) = p-1 x q-1
+d=e^-1 mod phi(n)
+
+4) Entschlüsselung
+
+m = c^d mod n

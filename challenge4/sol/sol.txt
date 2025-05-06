@@ -1,0 +1,3 @@
+Die benutzte Hash-Funktion ist sehr schwach, was dazu führt. Da hier im allgemeinen nur der Hash geprüft wird und nicht der Key reicht es, eine Kollision für diese Hashfunktion zu finden. 
+
+Mögliche Kollision: 5. Dann wird die Flagge entschlüsselt.
